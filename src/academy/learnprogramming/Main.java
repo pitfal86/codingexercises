@@ -1,5 +1,7 @@
 package academy.learnprogramming;
 
+import javax.swing.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -183,6 +185,87 @@ public class Main {
         //System.out.println(PaintJob.getBucketCount(3.4, 1.5));
         //System.out.println(PaintJob.getBucketCount(6.26, 2.2));
        // System.out.println(PaintJob.getBucketCount(3.26, 0.75));
+
+/*        Car porsche = new Car();
+        Car holden = new Car();
+        porsche.setModel("Carrera");
+        System.out.println(porsche.getModel());*/
+
+
+/*        BankAccount bankAccount = new BankAccount();
+        bankAccount.setBalance(100);
+        System.out.println(bankAccount.getBalance());
+        bankAccount.withdrawFunds(10);
+        System.out.println(bankAccount.getBalance());
+        bankAccount.withdrawFunds(100);
+        System.out.println(bankAccount.getBalance());
+        bankAccount.withdrawFunds(90);
+        System.out.println(bankAccount.getBalance());*/
+
+
+       // BankAccount bankAccountTwo = new BankAccount(123, 100, "bob", "bob@bob", "888-888");
+       // System.out.println(bankAccountTwo.getBalance());
+
+/*        Carpet carpet = new Carpet(3.5);
+        Floor floor = new Floor(2.75, 4.0);
+        Calculator calculator = new Calculator(floor, carpet);
+
+        System.out.println(calculator.getTotalCost());
+
+        carpet = new Carpet(1.5);
+        floor = new Floor(5.4, 4.5);
+        calculator = new Calculator(floor, carpet);
+
+        System.out.println(calculator.getTotalCost());*/
+
+/*        ComplexNumber one = new ComplexNumber(1.0, 1.0);
+        ComplexNumber number = new ComplexNumber(2.5, -1.5);
+        one.add(1,1);
+        System.out.println(one.getReal());
+        System.out.println(one.getImaginary());
+        one.subtract(number);
+        System.out.println(one.getReal());
+        System.out.println(one.getImaginary());
+        number.subtract(one);
+        System.out.println(number.getReal());
+        System.out.println(number.getImaginary());*/
+
+        //Animal animal = new Animal("Animal", 1, 1, 5, 5);
+       // Dog dog = new Dog("Yorkie", 8, 20, 2, 4, 1, 20, "long");
+       // dog.eat();
+       // dog.walk();
+        //dog.run();
+
+
+/*        Dodge dodge = new Dodge(36);
+        dodge.steer(45);
+        dodge.accelerate(30);
+        dodge.accelerate(20);
+        dodge.accelerate(-42);*/
+
+
+/*        Circle circle = new Circle(3.75);
+        System.out.println(circle.getRadius());
+        System.out.println(circle.getArea());
+
+        Cylinder cylinder = new Cylinder(5.55, 7.25);
+        System.out.println(cylinder.getRadius());
+        System.out.println(cylinder.getHeight());
+        System.out.println(cylinder.getArea());
+        System.out.println(cylinder.getVolume());*/
+
+
+        Rectangle rectangle = new Rectangle(5, 10);
+        System.out.println(rectangle.getWidth());
+        System.out.println(rectangle.getLength());
+        System.out.println(rectangle.getArea());
+
+        Cuboid cuboid = new Cuboid(5, 10, 5);
+        System.out.println(cuboid.getWidth());
+        System.out.println(cuboid.getLength());
+        System.out.println(cuboid.getArea());
+        System.out.println(cuboid.getHeight());
+        System.out.println(cuboid.getVolume());
 
     }
 

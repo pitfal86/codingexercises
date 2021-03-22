@@ -1,0 +1,24 @@
+class = blueprint (house)
+reference = address to object
+    House house = new House ();
+    House newHouse = house;
+
+    above both reference the same object
+instance = object created (new keyword)
+
+
+
+static or instance method?
+1. does it use any fields (instance variables) or instance method?
+    yes = instance method
+    no = static method
+
+static variables
+1. once changed, all other instances of that object will receive it (both old and new)
+    ** Scanner is good instance of this.... since all user input should change all objects **
+    private static String name;
+
+    Dog rex = new (Dog("rex");
+    Dog fluffy = new Dog ("fluffy");
+    both above will have name as "fluffy" since fluffy was last set
+
