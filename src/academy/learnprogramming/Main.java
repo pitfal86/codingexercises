@@ -1,7 +1,5 @@
 package academy.learnprogramming;
 
-import javax.swing.*;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -255,7 +253,7 @@ public class Main {
         System.out.println(cylinder.getVolume());*/
 
 
-        Rectangle rectangle = new Rectangle(5, 10);
+/*        Rectangle rectangle = new Rectangle(5, 10);
         System.out.println(rectangle.getWidth());
         System.out.println(rectangle.getLength());
         System.out.println(rectangle.getArea());
@@ -265,8 +263,140 @@ public class Main {
         System.out.println(cuboid.getLength());
         System.out.println(cuboid.getArea());
         System.out.println(cuboid.getHeight());
-        System.out.println(cuboid.getVolume());
+        System.out.println(cuboid.getVolume());*/
 
+        //Case myCase = new Case("220b", "dell", "240", new Dimensions(20, 20, 5));
+        //Monitor monitor = new Monitor("27inch Beast", "Acer", 27, new Resolution(2540, 1440));
+        //Motherboard motherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
+
+        //PC thePC = new PC(myCase, monitor, motherboard);
+        //thePC.getMonitor().drawPixelAt(1500, 1200, "red");
+        //thePC.getMotherboard().loadProgram("Windows 1.0");
+        //thePC.getTheCase().pressPowerButton();
+        //thePC.powerUp();
+
+/*
+        WallChallenge wall1 = new WallChallenge("West");
+        WallChallenge wall2 = new WallChallenge("South");
+        WallChallenge wall3 = new WallChallenge("North");
+        WallChallenge wall4 = new WallChallenge("East");
+        Ceiling ceiling = new Ceiling(12, 55);
+        Bed bed = new Bed("Modern", 4, 3, 2, 1);
+        Lamp lamp = new Lamp("Classic", false, 75);
+        Bedroom bedroom = new Bedroom("Tims", wall1, wall2, wall3, wall4, ceiling, bed, lamp);
+        bedroom.makeBed();
+        bedroom.getLamp().turnOn();*/
+
+/*        Player player = new Player();
+        player.fullName = "tim";
+        player.health = 20;
+        player.weapon = "sword";
+
+        int damage = 10;
+        player.lostHealth(damage);
+        System.out.println(player.health);
+
+        damage = 11;
+        player.health = 200;
+        player.lostHealth(damage);
+        System.out.println(player.health);*/
+
+/*        PlayerEnhanced playerEnhanced = new PlayerEnhanced("time", 50, "sword");
+        System.out.println(playerEnhanced.getHealth());
+        playerEnhanced.lostHealth(30);
+        System.out.println(playerEnhanced.getHealth());*/
+
+/*        Printer printer = new Printer(50, false);
+        int pagesPrinted = printer.printPages(4);
+        System.out.println(printer.getPagesPrinted());
+        System.out.println("sedcond" + pagesPrinted);
+        pagesPrinted = printer.printPages(2);
+        System.out.println(printer.getPagesPrinted());
+        System.out.println("sedcond" + pagesPrinted);*/
+
+/*        for (int i = 1; i < 11; i ++){
+         Movie movie = Polymorphism.randomMovie();
+            System.out.println("movie " + i + "\n" + movie.getName() + "\n" + movie.plot());
+        }*/
+
+/*        for (int i = 1; i < 11; i ++){
+            PolyCar car = PolyTwo.randomCar();
+            System.out.println("car " + i + "\n" + car.getName() + "  " + car.startEngine());
+        }*/
+
+
+
+/*        PolyCar polyCar = new PolyCar("Base Case", 8);
+        System.out.println(polyCar.startEngine());
+        System.out.println(polyCar.accelerate());
+        System.out.println(polyCar.brake());
+
+        Toyota toyota = new Toyota("Corolla", 12);
+        System.out.println(toyota.startEngine());
+        System.out.println(toyota.accelerate());
+        System.out.println(toyota.brake());
+
+        Audi audi = new Audi("TT", 16);
+        System.out.println(audi.startEngine());
+        System.out.println(audi.accelerate());
+        System.out.println(audi.brake());*/
+
+       /* Hamburger hamburger = new Hamburger("wheat roll", "Elk", 9.99, "The Rachel");
+        System.out.println(hamburger.toString());
+        hamburger.hasCarrot(true);
+        System.out.println(hamburger.toString());
+        hamburger.hasCarrot(false);
+        System.out.println(hamburger.toString());
+        hamburger.hasLettuce(true);
+        hamburger.hasTomato(true);
+        System.out.println(hamburger.toString());
+        hamburger.hasTomato(false);
+        System.out.println(hamburger.toString());
+
+        HamburgerHealthy hamburgerHealthy = new HamburgerHealthy( "Bison", 9.99, "The Joey");
+        System.out.println(hamburgerHealthy.toString());
+        hamburgerHealthy.hasCarrot(true);
+        System.out.println(hamburgerHealthy.toString());
+        hamburgerHealthy.hasCarrot(false);
+        System.out.println(hamburgerHealthy.toString());
+        hamburgerHealthy.hasLettuce(true);
+        hamburgerHealthy.hasTomato(true);
+        System.out.println(hamburgerHealthy.toString());
+        hamburgerHealthy.hasTomato(false);
+        System.out.println(hamburgerHealthy.toString());
+        hamburgerHealthy.hasExtraLettuce(true);
+        System.out.println(hamburgerHealthy.toString());
+
+
+        HamburgerDeluxe hamburgerDeluxe = new HamburgerDeluxe( "white", "Bison", 9.99, "The Ross");
+        System.out.println(hamburgerDeluxe.toString());
+        hamburgerDeluxe.hasCarrot(true);
+        System.out.println(hamburgerDeluxe.toString());
+        hamburgerDeluxe.hasCarrot(false);
+        System.out.println(hamburgerDeluxe.toString());
+        hamburgerDeluxe.hasLettuce(true);
+        hamburgerDeluxe.hasTomato(true);
+        System.out.println(hamburgerDeluxe.toString());
+        hamburgerDeluxe.hasTomato(false);
+        System.out.println(hamburgerDeluxe.toString());*/
+
+
+        HamburgerAnswer hamburgerAnswer = new HamburgerAnswer("Basic" , "Sausage" , 3.56, "white");
+        double price = hamburgerAnswer.itemizeHamburger();
+        hamburgerAnswer.addHamburgerAddition1("Tomato", .27);
+        hamburgerAnswer.addHamburgerAddition2("Lettuce", .75);
+        hamburgerAnswer.addHamburgerAddition3("Cheese", 1.13);
+        price = hamburgerAnswer.itemizeHamburger();
+        System.out.println(price);
+
+        HealthyBurgerAnswer healthyBurgerAnswer = new HealthyBurgerAnswer("Bacon", 5.67);
+        healthyBurgerAnswer.addHamburgerAddition1("Egg", 5.43);
+        healthyBurgerAnswer.addHealthAddition1("Lentils", 3.41);
+        System.out.println(healthyBurgerAnswer.itemizeHamburger());
+
+        HamburgerDeluxeAnswer hamburgerDeluxeAnswer = new HamburgerDeluxeAnswer();
+        hamburgerDeluxeAnswer.addHamburgerAddition1("no", 100.00);
+        hamburgerDeluxeAnswer.itemizeHamburger();
     }
 
 
