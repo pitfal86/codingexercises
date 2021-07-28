@@ -1,5 +1,7 @@
 package academy.learnprogramming;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -381,7 +383,7 @@ public class Main {
         System.out.println(hamburgerDeluxe.toString());*/
 
 
-        HamburgerAnswer hamburgerAnswer = new HamburgerAnswer("Basic" , "Sausage" , 3.56, "white");
+   /*     HamburgerAnswer hamburgerAnswer = new HamburgerAnswer("Basic" , "Sausage" , 3.56, "white");
         double price = hamburgerAnswer.itemizeHamburger();
         hamburgerAnswer.addHamburgerAddition1("Tomato", .27);
         hamburgerAnswer.addHamburgerAddition2("Lettuce", .75);
@@ -396,7 +398,40 @@ public class Main {
 
         HamburgerDeluxeAnswer hamburgerDeluxeAnswer = new HamburgerDeluxeAnswer();
         hamburgerDeluxeAnswer.addHamburgerAddition1("no", 100.00);
-        hamburgerDeluxeAnswer.itemizeHamburger();
+        hamburgerDeluxeAnswer.itemizeHamburger();*/
+
+
+/*        int[] myIntArr = new int[10];
+        myIntArr[5] = 50;
+        int[] myIntArrTwo = {1,2,3,4,5,6,7,8,9,10};
+        int[] myIntArrThree = new int[10];
+        for (int i =0; i < myIntArrThree.length; i ++){
+            myIntArrThree[i] = i *10;
+        }
+        for (int i =0; i < myIntArrThree.length; i ++){
+            System.out.println(myIntArrThree[i]);
+        }*/
+
+        //ArraryScanner.runScanner();
+
+       // ArrayChallenge.runScanner();
+
+      //  ArrayElementChallenge.readIntegers();
+
+       // ArrayListGroceryMain arrayListGroceryMain = new ArrayListGroceryMain();
+      //  arrayListGroceryMain.scannerThing();
+
+     //   ArrayListMobilePhone arrayListMobilePhone = new ArrayListMobilePhone();
+      //  arrayListMobilePhone.printMenu();
+
+      //  ArrayListMobilePhoneSol arrayListMobilePhoneSol = new ArrayListMobilePhoneSol("123122312");
+      //  arrayListMobilePhoneSol.runApp();
+
+/*        Solution solution = new Solution();
+        long[] myIntArray = {1, 3, 5, 5, 5, 5, 7, 123, 125};
+        System.out.println(solution.indexes(myIntArray, 1231).first);
+        System.out.println(solution.indexes(myIntArray, 1231).second);*/
+
     }
 
 

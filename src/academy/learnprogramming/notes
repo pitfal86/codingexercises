@@ -56,3 +56,37 @@ Polymorphism
     Actions to act differently based on the object created
     Unique functionality
      for a class that has inherited from a base class
+
+
+Reference Type vs Value Type
+
+    Value = holds a value in memory
+    Reference = creates a new object and assigns an address, cannot get object directly (arrays and string)
+    EX:
+        int value = 10;
+        int anotherValue = value; (10)
+        anotherValue ++; (value = 10, anotherValue = 11)
+
+        int[] arrVal = new int[5];
+        int[]anotherArr = arrVal;
+        anotherArr[0] = 1; (arrVal[0] = 1, anotherArr[0] = 1)
+
+    Pass By Ref = creates another address to object
+    EX:
+        modifyArr(myArr){
+            myArr[0] = 2;
+        }
+
+        modifyArr(anotherArr); (3 addresses 1 object, arrVal, anotherArr, myArr)
+
+    De-Reference = assign "new" array
+    EX:
+        modifyArr(myArr){
+            myArr[0] = 2;
+            myArr = new int[] {1,2,3,4,5};
+        }
+
+        modifyArr(anotherArr); (4 addresses 2 object {arrVal, anotherArr, myArr = 3 / 1} {myArr = 1 / 1})
+
+
+
