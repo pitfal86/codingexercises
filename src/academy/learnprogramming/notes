@@ -90,3 +90,9 @@ Reference Type vs Value Type
 
 
 
+Autoboxing / Unboxing
+    Autoboxing = Creating / converting a base primitive type to an object
+    Unboxing = Taking from object to base primitive type
+
+    Integer myVal = 56; is the same as Integer myVal = Integer.valueOf(56);
+    int myInt = myVal.intValueOf(); is the same as myInt.intValue();

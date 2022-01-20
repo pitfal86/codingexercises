@@ -1,5 +1,6 @@
 package academy.learnprogramming;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -432,6 +433,52 @@ public class Main {
         System.out.println(solution.indexes(myIntArray, 1231).first);
         System.out.println(solution.indexes(myIntArray, 1231).second);*/
 
+/*        Bank bank = new Bank("Cool Bank");
+        bank.addBranch("Best Branch");
+        bank.addCustomer("Best Branch", "Awesome Customer", 20.01);
+        bank.addCustTransaction("Best Branch", "Awesome Customer", 40.05);
+
+        bank.listCustomer("Best Branch", true);
+
+        if (!bank.addCustomer("Blarg", "Bob", 5.56)){
+            System.out.println("Branch doesn't exist");
+        }
+
+        if (!bank.addBranch("Best Branch")){
+            System.out.println("Branch exists");
+        }
+
+        if (!bank.addCustTransaction("Best Branch", "Frank", 30.33)){
+            System.out.println("Customer doesn't exists");
+        }
+
+        if (!bank.addCustomer("Best Branch", "Awesome Customer", 30.33)){
+            System.out.println("Customer already exists");
+        }*/
+
+/*
+        LinkedList linkedList = new LinkedList("Tim", 54.96);
+        LinkedList anotherLinkedList;
+
+        anotherLinkedList = linkedList;
+        anotherLinkedList.setBalance(12.19);
+        System.out.println(linkedList.getName() + " " + linkedList.getBalance());
+*/
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(3);
+        list.add(4);
+
+        for (int i = 0; i < list.size(); i++){
+            System.out.println(i + " " + list.get(i));
+        }
+
+        list.add(1,2);
+
+        for (int i = 0; i < list.size(); i++){
+            System.out.println(i + " " + list.get(i));
+        }
     }
 
 
