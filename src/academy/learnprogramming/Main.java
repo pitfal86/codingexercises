@@ -1,7 +1,8 @@
 package academy.learnprogramming;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Iterator;
+import java.util.Queue;
+import java.util.Stack;
 
 public class Main {
 
@@ -452,6 +453,7 @@ public class Main {
             System.out.println("Customer doesn't exists");
         }
 
+        test this is a  test of the testing thing that neeeds to test
         if (!bank.addCustomer("Best Branch", "Awesome Customer", 30.33)){
             System.out.println("Customer already exists");
         }*/
@@ -465,7 +467,7 @@ public class Main {
         System.out.println(linkedList.getName() + " " + linkedList.getBalance());
 */
 
-        ArrayList<Integer> list = new ArrayList<>();
+/*        ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(3);
         list.add(4);
@@ -478,7 +480,87 @@ public class Main {
 
         for (int i = 0; i < list.size(); i++){
             System.out.println(i + " " + list.get(i));
+        }*/
+
+        BinaryNode a = new BinaryNode('a');
+        BinaryNode b = new BinaryNode('b');
+        BinaryNode c = new BinaryNode('c');
+        BinaryNode d = new BinaryNode('d');
+        BinaryNode e = new BinaryNode('e');
+        BinaryNode f = new BinaryNode('f');
+
+        a.left = b;
+        a.right = c;
+        b.left = d;
+        b.right = e;
+        c.right = f;
+
+        BinaryDepthFirst binaryDepthFirst = new BinaryDepthFirst(a);
+        Stack<BinaryNode> result = binaryDepthFirst.performSearch();
+        for (BinaryNode binaryNode : result) {
+           // System.out.println(binaryNode.value);
         }
+
+        BinaryDepthFirst binaryDepthFirst1 = new BinaryDepthFirst(null);
+        Stack<BinaryNode> result2 = binaryDepthFirst1.performSearch();
+        for (BinaryNode binaryNode : result2) {
+           // System.out.println(binaryNode.value);
+        }
+
+        Stack<BinaryNode> result3 = binaryDepthFirst.searchRecursive(a);
+        for (BinaryNode binaryNode : result3) {
+           // System.out.println(binaryNode.value);
+        }
+
+        BinaryBreadthFirst binaryBreadthFirst = new BinaryBreadthFirst(a);
+        Queue<BinaryNode> result4 = binaryBreadthFirst.performSearch();
+        for (BinaryNode binaryNode : result4) {
+            //System.out.println(binaryNode.value);
+        }
+
+        BinaryBreadthFirst binaryBreadthFirst1 = new BinaryBreadthFirst((BinaryNode) null);
+        Queue<BinaryNode> result5 = binaryBreadthFirst.performSearch();
+        for (BinaryNode binaryNode : result5) {
+            //System.out.println(binaryNode.value);
+        }
+
+        BinaryBreadthFirst binaryBreadthFirs2 = new BinaryBreadthFirst(a);
+        boolean result6 = binaryBreadthFirs2.searchValue('e');
+        //System.out.println(result6);
+
+        BinaryBreadthFirst binaryBreadthFirst3 = new BinaryBreadthFirst((BinaryNode) null);
+        boolean result7 = binaryBreadthFirst3.searchValue('e');
+        //System.out.println(result7);
+
+
+
+        boolean result8 = binaryDepthFirst.searchValue(a, 'e');
+        //System.out.println(result8);
+
+        boolean result9 = binaryDepthFirst.searchValue(a, 'j');
+        //System.out.println(result9);
+
+
+        BinaryNodeInt aInt = new BinaryNodeInt(3);
+        BinaryNodeInt bInt = new BinaryNodeInt(11);
+        BinaryNodeInt cInt = new BinaryNodeInt(4);
+        BinaryNodeInt dInt = new BinaryNodeInt(4);
+        BinaryNodeInt eInt = new BinaryNodeInt(-2);
+        BinaryNodeInt fInt = new BinaryNodeInt(1);
+
+        aInt.left = bInt;
+        aInt.right = cInt;
+        bInt.left = dInt;
+        bInt.right = eInt;
+        cInt.right = fInt;
+
+        BinaryDepthFirst binaryDepthFirstInt = new BinaryDepthFirst(a);
+        Integer result10 = binaryDepthFirstInt.treeSum(aInt);
+        //System.out.println(result10);
+
+        BinaryBreadthFirst binaryBreadthFirstInt = new BinaryBreadthFirst(aInt);
+        Integer result11 = binaryBreadthFirstInt.treeSum(aInt);
+        System.out.println(result11);
     }
 
 
